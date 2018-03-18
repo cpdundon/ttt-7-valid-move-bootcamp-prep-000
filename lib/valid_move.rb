@@ -15,6 +15,11 @@ def position_taken?(board, idx)
   end
   
   out = board[idx]
+  
+  if out == nil
+    return false  
+  end
+  
   out_strip = out.strip
   if out_strip == "X" || out_strip == "O"
     return true
